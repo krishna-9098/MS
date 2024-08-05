@@ -1,0 +1,123 @@
+/* Main container for the login page */
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 3%;
+    background-image: url('../../../assets/images/back.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+  }
+  
+  /* Logo styling */
+  .logo {
+    height: 90%;
+    width: 90%;
+  }
+  
+  /* Header text styling */
+  .headtext {
+    text-align: center;
+    font-weight: 700;
+    font-size: 50px;
+    color: white;
+  }
+  
+  /* Input container styling */
+  .inputContainer {
+    display: flex;
+    flex-direction: column;
+    border: 0.5px solid gray;
+    width: 30%;
+    margin-top: 1%;
+    padding-left: 2.5%;
+    padding-right: 0%;
+    padding-bottom: 2.5%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(2, 2, 2, 0.5); /* Adjust shadow as needed */
+    transition: transform 0.3s ease-in-out; /* Optional: Smooth transition for transform */
+  }
+  
+  /* Individual input box styling */
+  .inputBox {
+    display: flex;
+    border: 0.5px solid gray;
+    height: 50px;
+    width: 90%;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+    background-color: white;
+  }
+  
+  /* Input field styling */
+  .input {
+    border-radius: 10px;
+    color: rgb(9, 8, 8);
+    border: 0;
+    outline: none;
+    height: 48px;
+    width: 100%;
+    margin-left: 3%;
+    background-color: white;
+  }
+  
+  /* Icon styling */
+  .icon {
+    margin-left: 10%;
+    height: 30px;
+    width: 30px;
+    background-color: white;
+  }
+  
+  /* Button styling */
+  .btn {
+    margin-top: 2%;
+    width: 90%;
+    font-weight: 600;
+  }
+  
+  /* Create button styling */
+  .createbtn {
+    margin-top: 2%;
+    width: 10%;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 1200px) {
+    .inputContainer {
+      width: 50%;
+    }
+    .headtext {
+      font-size: 40px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .inputContainer {
+      width: 70%;
+    }
+    .headtext {
+      font-size: 30px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .inputContainer {
+      width: 90%;
+    }
+    .headtext {
+      font-size: 25px;
+    }
+    .icon {
+      margin-left: 5%;
+    }
+    .createbtn {
+      width: 40%;
+    }
+  }
+  

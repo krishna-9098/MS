@@ -1,0 +1,126 @@
+/* Overall container for the sign-up page */
+.Smain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 3%;
+    background-image: url("../../../assets/images/back.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+  }
+  
+  /* Container for the registration form */
+  .SregisterContainer {
+    width: 30%;
+    margin-top: 0%;
+    background-color: white;
+    margin-bottom: 2%;
+    border-radius: 10px;
+    padding-bottom: 2%;
+    box-shadow: 2px 2px 8px rgba(2, 2, 2, 0.5);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Header text for the sign-up page */
+  .Sheadtext {
+    text-align: center;
+    font-weight: 700;
+    font-size: 50px;
+    color: white;
+  }
+  
+  /* Logo styling */
+  .Slogo {
+    margin-top: 1%;
+    height: 20%;
+    width: 95%;
+    margin-left: 3%;
+  }
+  
+  /* Container for input fields */
+  .SinputContainer {
+    display: flex;
+    flex-direction: column;
+    border: 0.5px solid gray;
+    width: 30%;
+    margin-top: 1%;
+    padding-left: 2.5%;
+    padding-right: 0%;
+    padding-bottom: 2.5%;
+    background-color: white;
+  }
+  
+  /* Individual input box styling */
+  .SinputBox {
+    display: flex;
+    border: 0.5px solid gray;
+    height: 50px;
+    width: 90%;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+    background-color: white;
+    margin-left: 5%;
+  }
+  
+  /* Input field styling */
+  .Sinput {
+    border-radius: 10px;
+    color: rgb(9, 8, 8);
+    border: 0;
+    outline: none;
+    height: 48px;
+    width: 100%;
+    margin-left: 3%;
+    background-color: white;
+  }
+  
+  /* Icon styling */
+  .Sicon {
+    margin-left: 10%;
+    height: 30px;
+    width: 30px;
+    background-color: white;
+  }
+  
+  /* Button styling */
+  .Sbtn {
+    margin-top: 2%;
+    width: 90%;
+    margin-left: 5%;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 1200px) {
+    .SregisterContainer {
+      width: 50%;
+    }
+    .Sheadtext {
+      font-size: 40px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .SregisterContainer {
+      width: 70%;
+    }
+    .Sheadtext {
+      font-size: 30px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .SregisterContainer {
+      width: 90%;
+    }
+    .Sheadtext {
+      font-size: 25px;
+    }
+    .Sicon {
+      margin-left: 5%;
+    }
+  }
+  

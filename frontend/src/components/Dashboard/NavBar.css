@@ -1,0 +1,195 @@
+/* Base styles */
+
+.NmainContainer {
+    /* padding: 1% 2%; */
+    /* Background color for navbar */
+  }
+  
+  .Nmain {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 80px;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.86);
+  }
+  
+  .logoContainer {
+    cursor: pointer;
+    align-self: center;
+    display: flex;
+    align-items: center;
+  }
+  
+  .logoText {
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+  }
+  
+  .hamburgerIcon {
+    display: none;
+    margin-left: 10px;
+    color: white;
+  }
+  
+  ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    width: 75%;
+  }
+  
+  li {
+    position: relative; /* for dropdown */
+    margin-left: 1%;
+    padding: 10px 15px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  li:hover {
+    background-color: #85adad;
+    border-radius: 10px;
+  }
+  
+  .NavItems {
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
+  }
+  
+  .navItemWithIcon {
+    display: flex;
+    align-items: center;
+  }
+  
+  .dropdownIcon {
+    margin-left: 5px;
+    color: white;
+  }
+  
+  /* Dropdown menu styles */
+  .dropdownMenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #343a40;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 200px;
+    z-index: 1000;
+  }
+  
+  li:hover .dropdownMenu {
+    display: block;
+  }
+  
+  .dropdownMenu li {
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .dropdownMenu li:hover {
+    background-color: #85adad;
+    border-radius: 0;
+  }
+  
+  .rightNav {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    align-content: flex-end;
+    margin-right: 0%;
+    align-self: center;
+  }
+  
+  .rightNavItems {
+    display: flex;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    padding-right: 1%;
+    padding-left: 1%;
+  }
+  
+  .rightNavItems:hover {
+    background-color: #85adad;
+    border-radius: 10px;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .Nmain {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .logoContainer {
+      justify-content: space-between;
+      width: 100%;
+    }
+  
+    .logoText {
+      display: none; /* Hide the logo text on small screens */
+    }
+  
+    .hamburgerIcon {
+      display: block; /* Show the hamburger icon on small screens */
+    }
+  
+    ul {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+  
+    ul.active {
+      display: flex;
+    }
+  
+    li {
+      width: 100%;
+      margin: 10px 0;
+      text-align: center;
+    }
+  
+    .rightNav {
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+      margin-left: 0;
+    }
+  
+    .rightNavItems {
+      margin-left: 0;
+      margin-top: 5px;
+      text-align: center;
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .logoText {
+      font-size: 16px;
+    }
+  
+    .NavItems {
+      font-size: 16px;
+    }
+  
+    .rightNavItems {
+      font-size: 16px;
+    }
+  }
+  
